@@ -1,0 +1,102 @@
+:root {
+    /* gets colours from https://coolors.co */ 
+    --msu-green: #244233ff; 
+    --mint: #52b788ff;
+    --beige: #ffffe8ff;
+    --timberwolf: #d9dbd5ff; 
+    --mindaro: #e7ffb0ff; 
+    --serif: 'Merriweather', serif;
+    --sans: 
+
+}
+
+body {
+    margin: 0; 
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    font-family: 'Merriweather', serif;
+}
+
+.main-header  {
+    background-color: var(--mint);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.main-navigation a, 
+.user-nav a,
+.footer-navigation a,
+.social-nav a {
+    color: var(--beige);
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    width: 80px;
+    padding: 0.5em;
+    display: block;
+}
+
+.search {}
+
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+/* ------------FOOTER SECTION------------ */ 
+
+.main-footer {
+    background-color: var(--msu-green);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-nav a {
+    font-size: 1.5em;
+    color: var(--mindaro);
+}
+/*-------------HOME PAGE----------- */ 
+.home-banner {
+    min-height: 50vh; 
+    background-image: url("/Images/shoes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center center;
+    min-width: 100; 
+}
+
+.home-banner h2 {
+    color: var(--msu-green);
+    font-size: 3em;
+    font-family: var(--sans);
+    text-shadow: 0px 0px 2px white;
+    padding: 0.4em;
+    background-color: rgba(255, 255, 255, 0.6); 
+}
+
+.slide1 {
+    background-image: url("/images/latest/joseph-barrientos-4qSb_FWhHKs-unsplash.jpg");
+}
+
+.slide2 {
+    background-image: url("/images/latest/luis-felipe-lins-J2-wAQDckus-unsplash.jpg");
+}
+
+.slide3 {
+    background-image: url("/images/latest/trendest-studio-XZ3EmAIWuz0-unsplash.jpg");
+}
